@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.49dbf7c4.css",
-    "main.js": "/static/js/main.4afaa121.js",
+    "main.css": "/static/css/main.bd784a16.css",
+    "main.js": "/static/js/main.b635f0b3.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/hindu.gif": "/static/media/hindu.b92b6daa467c0050a23d.gif",
     "static/media/cricket.gif": "/static/media/cricket.4661fb3ee83c54d468b5.gif",
@@ -10,18 +10,19 @@
     "static/media/Shape.png": "/static/media/Shape.228ce9c85365ec01e310.png",
     "static/media/smoke.png": "/static/media/smoke.16d09f0ac42107fc17bb.png",
     "static/media/img-png.png": "/static/media/img-png.75d452b9baf32fdf2284.png",
+    "static/media/Himanku_Gogoi_Resume.pdf": "/static/media/Himanku_Gogoi_Resume.b93e34fac509884a79b8.pdf",
     "static/media/img.png": "/static/media/img.bcee916769a4eb5e273b.png",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.49dbf7c4.css.map": "/static/css/main.49dbf7c4.css.map",
-    "main.4afaa121.js.map": "/static/js/main.4afaa121.js.map",
+    "main.bd784a16.css.map": "/static/css/main.bd784a16.css.map",
+    "main.b635f0b3.js.map": "/static/js/main.b635f0b3.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.49dbf7c4.css",
-    "static/js/main.4afaa121.js"
+    "static/css/main.bd784a16.css",
+    "static/js/main.b635f0b3.js"
   ]
 }
