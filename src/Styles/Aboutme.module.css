@@ -1,0 +1,8 @@
+.aboutme {
+    position: relative;
+    background-image: url("../Images/smoke.png");
+    /* background-image: url("https://img.freepik.com/free-vector/white-abstract-background-theme_23-2148830883.jpg?w=2000"); */
+    background-size: cover;
+    padding: 50px 0;
+    border-bottom: 1px solid rgb(197, 190, 190);
+}

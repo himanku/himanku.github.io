@@ -1,0 +1,27 @@
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-menu>div {
+    height: 100%;
+    align-items: center;
+    cursor: pointer;
+}
+.nav-menu .active {
+    color: rgba(219, 101, 5, 0.801);
+    padding: 15px;
+    border-bottom: 2px solid rgba(255, 115, 0, 0.801);
+}
+
+.nav-menu>div:not(:last-child):hover {
+    color: rgba(219, 101, 5, 0.801);
+    border-bottom: 2px solid rgba(255, 115, 0, 0.801);
+}
+.box_shadow {
+    box-shadow: 10px 10px 19px rgb(0 0 0 / 10%);
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: #ECF0F3;
+}

@@ -1,0 +1,30 @@
+.project > div {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background: linear-gradient(145deg, #d7d9db, #ffffff);
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+  .project > div:hover {
+    transform: scale(1.05);
+  }
+  .project img {
+    border-radius: 10px;
+  }
+  .name:hover {
+    color: rgba(219, 101, 5, 0.801);
+  }
+  .tech {
+    color: rgba(219, 101, 5, 0.801);
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .stack {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .proj {
+    background-image: url("../Images/smoke.png");
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgb(197, 190, 190);
+}

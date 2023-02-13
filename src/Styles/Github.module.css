@@ -1,0 +1,78 @@
+.github {
+  background-image: url("../Images/smoke.png");
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgb(197, 190, 190);
+}
+
+.calender {
+  margin: auto;
+  margin-top: 50px;
+  width: 80%;
+  text-align: center;
+}
+
+.calenderChild {
+  margin: auto;
+  color: rgb(254, 145, 25);
+  width: 90%;
+  margin-top: 40px;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .calender {
+    margin: auto;
+    margin-top: 90px;
+    width: 90%;
+    text-align: center;
+  }
+  .calenderChild {
+    margin: auto;
+    color: rgb(254, 145, 25);
+    width: 100%;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 440px) and (max-width: 600px) {
+  .calender {
+    margin: auto;
+    margin-top: 60px;
+    width: 97%;
+    text-align: center;
+  }
+  .calenderChild {
+    margin: auto;
+    color: rgb(254, 145, 25);
+    width: 100%;
+    font-size: 20px;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 439px) {
+  .calender {
+    margin: auto;
+    margin-top: 40px;
+    width: 97%;
+    text-align: center;
+  }
+  .calenderChild {
+    margin: auto;
+    color: rgb(254, 145, 25);
+    width: 90%;
+    margin-top: 20px;
+  }
+}
+
+.Stats {
+  margin: auto;
+  margin-top: 50px;
+  width: 80%;
+  text-align: center;
+}
+.statics>div {
+    transition: 0.3s;
+}
+.statics>div:hover {
+    transform: scale(1.1);
+}
