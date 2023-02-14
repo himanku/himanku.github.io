@@ -74,7 +74,10 @@ const Navbar = () => {
           </Menu> */}
           <Button onClick={onOpen} onClose={onClose}  display={{base:"block", sm:"block", md:"none", lg:"none"}}
                   as={IconButton}
-                  icon={<HamburgerIcon />}/>
+                  icon={<HamburgerIcon />}
+                    color="orange.500"
+                    margin="auto"
+                  />
           <Drawer placement={"right"} onClose={onClose} isOpen={isOpen} size="xs" display={{base: "block", md:"none" }}>
             <DrawerOverlay />
               <DrawerContent>

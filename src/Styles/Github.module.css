@@ -72,6 +72,12 @@
 }
 .statics>div {
     transition: 0.3s;
+    /* backdrop-filter: blur(15px);
+    background: center center / cover rgba(244, 247, 254, 0.2); */
+}
+.statics>div img {
+  display: block;
+  margin: auto;
 }
 .statics>div:hover {
     transform: scale(1.1);

@@ -5,22 +5,22 @@ import styles from "../Styles/Github.module.css";
 import ReactTooltip from "react-tooltip";
 
 const Github = () => {
-  const selectLastHalfYear = (contribution) => {
-    const currentYear = new Date().getFullYear();
-    const currentMonth = new Date().getMonth();
-    const showMonths = 7;
+  // const selectLastHalfYear = (contribution) => {
+  //   const currentYear = new Date().getFullYear();
+  //   const currentMonth = new Date().getMonth();
+  //   const showMonths = 7;
 
-    return contribution.filter((day) => {
-      const date = new Date(day.date);
-      const monthOfDay = date.getMonth();
+  //   return contribution.filter((day) => {
+  //     const date = new Date(day.date);
+  //     const monthOfDay = date.getMonth();
 
-      return (
-        date.getFullYear() === currentYear &&
-        monthOfDay > currentMonth - showMonths &&
-        monthOfDay <= currentMonth
-      );
-    });
-  };
+  //     return (
+  //       date.getFullYear() === currentYear &&
+  //       monthOfDay > currentMonth - showMonths &&
+  //       monthOfDay <= currentMonth
+  //     );
+  //   });
+  // };
   return (
     <div className={styles.github}>
       <div className={styles.calender} id="github">
