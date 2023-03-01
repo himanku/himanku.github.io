@@ -1,4 +1,4 @@
-import { Box, Flex, Image, Text } from '@chakra-ui/react'
+import { Box, Button, Flex, Image, Text,Link } from '@chakra-ui/react'
 import React from 'react';
 import styles from "../Styles/Intro.module.css";
 import shape from "../Images/Shape.png";
@@ -6,15 +6,20 @@ import img from "../Images/img-png.png"
 import { Typewriter } from 'react-simple-typewriter';
 import Aos from 'aos';
 import 'aos/dist/aos.css'; 
+import { DownloadIcon } from '@chakra-ui/icons';
+import Resume from "../Images/Himanku_Gogoi_Resume.pdf";
 
 const Intro = () => {
   React.useEffect(()=> {
     Aos.init({duration: 1000})
 },[])
 
+const handleDownload = () => {
+  window.open("https://1drv.ms/b/s!Ai51a-2P7esUekhNh7Q7nPpwk5k?e=Luznnu")
+}
   return (
     <div>
-    <Flex className={styles.intro} flexDirection={{base:"column-reverse",sm:"column-reverse", md:"row", lg:"row"}} boxShadow="rgba(33, 35, 38, 0.1) 0px 10px 10px -10px" >
+    <Flex className={styles.intro} paddingBottom= {{base: "10px", md:"0"}} flexDirection={{base:"column-reverse",sm:"column-reverse", md:"row", lg:"row"}} boxShadow="rgba(33, 35, 38, 0.1) 0px 10px 10px -10px" >
         <Box w={{base:"100%",sm:"100%",md:"60%",lg:"55%"}} h={{base:"300px",sm:"300px",md:"350px",lg:"400px"}} textAlign="left" paddingLeft="10vw" paddingTop="4vh" position="relative">
           <Image zIndex={1} src="https://auricoe.com/img/bg/splat-yellow.svg" position="absolute" left={{base:"-15vw",sm:"-15vw",md:"-14vw",lg:"-10vw"}} objectFit="cover" w="100%" h="100%" top="0" />
           <Text position="relative" fontSize={{base:"25px",sm:"25x",md:"30px",lg:"40px"}} fontWeight="bold" zIndex={2}>Hello 👋,</Text>
@@ -39,16 +44,19 @@ const Intro = () => {
           </Text>
           <Text mt="50px" position="relative" fontSize={{base:"15px",sm:"15x",md:"18px",lg:"18px"}} color="#1e2125" fontWeight="600" zIndex="2">FIND ME ON</Text>
           <Flex className={styles.hover} gap="20px" position="relative" zIndex="2">
-            <Flex borderRadius="8px" boxShadow="rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px" justifyContent="center" alignItems="center" h="60px" w="60px" background="linear-gradient(145deg, #e2e8ec, #ffffff">
-              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/himankugogoi/"><Image src="https://cdn-icons-png.flaticon.com/512/174/174857.png" w="75%" display="block" m="auto"/></a>
+            <Flex borderRadius="8px" boxShadow="rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px" justifyContent="center" alignItems="center" h="50px" w="50px" background="linear-gradient(145deg, #e2e8ec, #ffffff">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/himankugogoi/"><Image zIndex="2" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" w="75%" display="block" m="auto"/></a>
             </Flex>
-            <Box borderRadius="8px" position="relative" zIndex="2" h="60px" w="60px" boxShadow="rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px" background="linear-gradient(145deg, #e2e8ec, #ffffff">
-              <a target="_blank" rel="noreferrer" href="https://github.com/himanku"><Image src="https://pngimg.com/uploads/github/github_PNG58.png" m="auto"/></a>
+            <Box borderRadius="8px" position="relative" zIndex="2" h="50px" w="50px" boxShadow="rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px" background="linear-gradient(145deg, #e2e8ec, #ffffff">
+              <a target="_blank" rel="noreferrer" href="https://github.com/himanku"><Image zIndex="2" src="https://pngimg.com/uploads/github/github_PNG58.png" m="auto"/></a>
             </Box>
-            <Box borderRadius="8px" boxShadow="rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px" h="60px" w="60px" background="linear-gradient(145deg, #e2e8ec, #ffffff">
-              <a target="_blank" rel="noreferrer" href="https://www.hackerrank.com/himankugogoi5"><Image src="https://upload.wikimedia.org/wikipedia/commons/6/65/HackerRank_logo.png" m="auto"/></a>
+            <Box borderRadius="8px" boxShadow="rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px" h="50px" w="50px" background="linear-gradient(145deg, #e2e8ec, #ffffff">
+              <a target="_blank" rel="noreferrer" href="https://www.hackerrank.com/himankugogoi5"><Image zIndex="2" src="https://upload.wikimedia.org/wikipedia/commons/6/65/HackerRank_logo.png" m="auto"/></a>
             </Box>
           </Flex>
+            <Button textAlign={"center"} m="auto" mt="10px" zIndex="2" colorScheme='orange' size="sm" onClick={handleDownload}>
+              <Link textDecoration="none" href={Resume} download="fw20_1260-Himanku-Gogoi-Resume.pdf">Resume <DownloadIcon/></Link>
+          </Button>
         </Box>
         <Box w={{base:"100%",sm:"100%",md:"40%",lg:"50%"}} h={{base:"300px",sm:"300px",md:"400px",lg:"400px"}} className={styles.bg}>
           <Image src={shape} position="absolute" left="0" objectFit="cover" w="100%" h="100%" zIndex={1} />

@@ -52,10 +52,10 @@ const Contact = () => {
                     <Text fontSize="18px">I am available for Full Stack Development</Text>
                     <Text fontSize="18px">Connect with me via email or whatsapp</Text>
                     <Box mt="10px">
-                      <Text as="span" fontSize="18px" fontWeight="bold">Contact: </Text><Text as="span">+919101087403</Text>
+                      <Text as="span" fontSize="18px" fontWeight="bold" color="orange.500">Contact: </Text><Text as="span" fontWeight={"bold"}>+919101087403</Text>
                     </Box>
                     <Box>
-                      <Text as="span" fontSize="18px" fontWeight="bold">Email: </Text><Text as="span">himankugogoi5@gmail.com</Text>
+                      <Text as="span" fontSize="18px" fontWeight="bold" color="orange.500">Email: </Text><Text as="span" fontWeight={"bold"}>himankugogoi5@gmail.com</Text>
                     </Box>
                     <Text mt="20px" position="relative" fontSize={{base:"15px",sm:"15x",md:"18px",lg:"18px"}} color="#1e2125" fontWeight="600" zIndex="2">FIND ME ON</Text>
                     <Flex className={styles.hover} gap="20px" position="relative" zIndex="2">

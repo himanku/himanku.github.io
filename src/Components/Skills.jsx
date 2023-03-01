@@ -3,6 +3,7 @@ import React from "react";
 import styles from "../Styles/Skills.module.css";
 import Aos from 'aos';
 import 'aos/dist/aos.css';                                                          
+import Tools from "./Tools";
 
 const Skills = () => {
     React.useEffect(()=> {
@@ -70,34 +71,16 @@ const Skills = () => {
           />
           <h1>Chakra UI</h1>
         </Box>
-        <Box data-aos="zoom-in-right">
-          <img alt="img" src="https://chiranjeev-thapliyal.vercel.app/svg/git.svg" />
-          <h1>GIT</h1>
-        </Box>
-        <Box data-aos="zoom-in-left">
-          <img alt="img" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" />
-          <h1>GitHub</h1>
-        </Box>
-        <Box data-aos="zoom-in-left">
-          <img alt="img" src="https://cdn.iconscout.com/icon/free/png-256/npm-3521612-2945056.png" />
-          <h1>NPM</h1>
-        </Box>
-        <Box data-aos="zoom-in-right">
+        {/* <Box data-aos="zoom-in-right">
           <img alt="img"
             style={{ borderRadius: "50%" }}
-            src="https://cdn.sanity.io/images/o0o2tn5x/production/13b9c8412093e2f0cdb5495e1f59144967fa1664-512x512.jpg"
+            src="https://res.cloudinary.com/djo88dwrg/image/upload/v1677568819/mongoose_vekvmi.png"
           />
-          <h1>Cypress</h1>
-        </Box>
-        <Box data-aos="zoom-in-right">
-          <img alt="img"
-            style={{ borderRadius: "50%" }}
-            src="https://avatars.githubusercontent.com/u/22632046?s=280&v=4"
-          />
-          <h1>StoryBook</h1>
-        </Box>
+          <h1>Mongoose</h1>
+        </Box> */}
       </div>
     </div>
+    <Tools/>
     </div>
   );
 };

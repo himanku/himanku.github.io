@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Link, IconButton, Image, Menu, MenuButton, MenuItem, MenuList, Drawer, DrawerOverlay, DrawerContent, DrawerHeader, DrawerBody, useDisclosure, DrawerCloseButton, List, ListItem, Text } from '@chakra-ui/react';
+import { Box, Button, Flex, Link, IconButton, Image, Drawer, DrawerOverlay, DrawerContent, DrawerHeader, DrawerBody, useDisclosure, DrawerCloseButton, List, ListItem, Text } from '@chakra-ui/react';
 import React from 'react';
 import img from "../../src/Images/img.png";
 import "../Styles/Navbar.css";
@@ -12,18 +12,22 @@ const Navbar = () => {
   const closeMenu = () => {
     setClick(true);
   }
+
+const handleDownload = () => {
+  window.open("https://1drv.ms/b/s!Ai51a-2P7esUekhNh7Q7nPpwk5k?e=Luznnu")
+}
   return (
-    <Flex className="box_shadow" justifyContent="space-around" >
-        <Box>
+    <Flex className="box_shadow" justifyContent="space-between" >
+        <Box onClick={()=> window.scrollTo(0,0)}>
             <Image src={img} w={{base:"40%",sm:"40%",md:"35%",lg:"40%"}}/>
         </Box>
-        <Flex className={click? "nav-menu active" : "nav-menu"} w={{md:"100%",lg:"65%"}} fontSize={{md:"14px",lg:"19px"}} fontWeight="bold" display={{base:"none", sm:"none", md:"flex", lg:"flex"}}>
-            <Flex onClick={closeMenu} classname="nav-item"><Links to='about' spy={true} smooth={true} offset={-100} duration={500}>About Me</Links></Flex>
-            <Flex onClick={closeMenu} classname="nav-item"><Links to='skills' spy={true} smooth={true} offset={-100} duration={500}>Skills</Links></Flex>
-            <Flex onClick={closeMenu} classname="nav-item"><Links to='projects' spy={true} smooth={true} offset={-100} duration={500}>Projects</Links></Flex>
-            <Flex onClick={closeMenu} classname="nav-item"><Links to='github' spy={true} smooth={true} offset={-100} duration={500}>GitHub Stats</Links></Flex>
-            <Flex onClick={closeMenu} classname="nav-item"><Links to='contact' spy={true} smooth={true} offset={-100} duration={500}>Contact Me</Links></Flex>
-            <Menu>
+        <Flex className={click? "nav-menu" : "nav-menu"} w={{md:"100%",lg:"65%"}} fontSize={{md:"14px",lg:"19px"}} fontWeight="bold" display={{base:"none", sm:"none", md:"flex", lg:"flex"}}>
+            <Flex onClick={closeMenu}><Links to='about' spy={true} smooth={true} offset={-50} duration={500}>About Me</Links></Flex>
+            <Flex onClick={closeMenu}><Links to='skills' spy={true} smooth={true} offset={-50} duration={500}>Skills</Links></Flex>
+            <Flex onClick={closeMenu}><Links to='projects' spy={true} smooth={true} offset={-50} duration={500}>Projects</Links></Flex>
+            <Flex onClick={closeMenu}><Links to='github' spy={true} smooth={true} offset={-50} duration={500}>GitHub Stats</Links></Flex>
+            <Flex onClick={closeMenu}><Links to='contact' spy={true} smooth={true} offset={-50} duration={500}>Contact Me</Links></Flex>
+            {/* <Menu>
             {({ isOpen }) => (
               <>
                 <MenuButton colorScheme='orange' size={"sm"} isActive={isOpen} as={Button} rightIcon={<DownloadIcon />}>
@@ -35,44 +39,16 @@ const Navbar = () => {
                 </MenuList>
               </>
             )}
-          </Menu>
-          {/* <Button>
-            <a target="_blank" rel="noreferrer" href="https://onedrive.live.com/?cid=14EBED8FED6B752E&id=14EBED8FED6B752E%21122&parId=14EBED8FED6B752E%21121&o=OneUp">
-            <Link textDecoration="none" href={Resume} download="Himanku_Gogoi_Resume.pdf"></Link>
-          </a>
-          </Button> */}
+          </Menu> */}
+          <Button colorScheme='orange' size={"sm"} onClick={handleDownload}>
+              <Link textDecoration="none" href={Resume} download="fw20_1260-Himanku-Gogoi-Resume.pdf">Resume <DownloadIcon/></Link>
+          </Button>
            
         </Flex>
-          {/* <Menu>
-              <MenuButton
-                  display={{base:"block", sm:"block", md:"none", lg:"none"}}
-                  as={IconButton}
-                  aria-label='Options'
-                  icon={<HamburgerIcon />}
-                  variant='outline'
-              />
-              <MenuList >
-                  <MenuItem>
-                    <Links to='about' spy={true} smooth={true} offset={-50} duration={500}>About Me</Links>
-                  </MenuItem>
-                  <MenuItem >
-                    <Links to='skills' spy={true} smooth={true} offset={-50} duration={500}>Skills</Links>
-                  </MenuItem>
-                  <MenuItem >
-                    <Links to='projects' spy={true} smooth={true} offset={-50} duration={500}>Projects</Links>
-                  </MenuItem>
-                  <MenuItem >
-                  <Links to='github' spy={true} smooth={true} offset={-100} duration={500}>GitHub Stats</Links>
-                  </MenuItem>
-                  <MenuItem >
-                  <Links to='contact' spy={true} smooth={true} offset={-50} duration={500}>Contact Me</Links>
-                  </MenuItem>
-                  <MenuItem color="rgba(219, 101, 5, 0.801)" fontWeight={600}>
-                    <Link textDecoration="none" href={Resume} download="Himanku_Gogoi_Resume.pdf">Download Resume <DownloadIcon/></Link>
-                  </MenuItem>
-              </MenuList>
-          </Menu> */}
-          <Button onClick={onOpen} onClose={onClose}  display={{base:"block", sm:"block", md:"none", lg:"none"}}
+        {/* <a target="_blank" rel="noreferrer" href="https://onedrive.live.com/?cid=14EBED8FED6B752E&id=14EBED8FED6B752E%21122&parId=14EBED8FED6B752E%21121&o=OneUp">
+            <Link textDecoration="none" href={Resume} download="fw20_1260_Himanku-Gogoi-Resume.pdf"></Link>
+          </a> */}
+          <Button  onClick={onOpen} onClose={onClose} variant="outline"  display={{base:"block", sm:"block", md:"none", lg:"none"}}
                   as={IconButton}
                   icon={<HamburgerIcon />}
                     color="orange.500"
@@ -105,10 +81,10 @@ const Navbar = () => {
                       <Links to='contact' onClick={onClose} spy={true} smooth={true} offset={-50} duration={500}>Contact Me</Links>
                     </ListItem>
                     <ListItem>
-                      <a target="_blank" rel="noreferrer" href="https://onedrive.live.com/?cid=14EBED8FED6B752E&id=14EBED8FED6B752E%21122&parId=14EBED8FED6B752E%21121&o=OneUp"><Text onClick={onClose}>View Resume  <ViewIcon/></Text></a>
+                      <a target="_blank" rel="noreferrer" href="https://1drv.ms/b/s!Ai51a-2P7esUekhNh7Q7nPpwk5k?e=Luznnu"><Text onClick={onClose}>View Resume  <ViewIcon/></Text></a>
                     </ListItem>
                     <ListItem color="rgba(219, 101, 5, 0.801)" fontWeight={600}>
-                      <Link onClick={onClose} textDecoration="none" href={Resume} download="Himanku_Gogoi_Resume.pdf">Download Resume <DownloadIcon/></Link>
+                      <Link onClick={onClose} textDecoration="none" href={Resume} download="fw20_1260-Himanku-Gogoi-Resume.pdf">Download Resume <DownloadIcon/></Link>
                     </ListItem>
                 </List>
                 </DrawerBody>
